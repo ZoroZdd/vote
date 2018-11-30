@@ -736,7 +736,7 @@ $IIIIIIl111Il=$IIIIIIIIIl11->where($IIIIIIIIlIl1)->find();
 if($IIIIIIl111Il==NULL)$this->error('非法操作');
 $IIIIIIlll11l=$IIIIIIIIIl11->where($IIIIIIIIlIl1)->find();
 
-$IIIIII1lIII1 = M('Vote_item')->where(array('vid'=>$IIIIIIIII1I1,'status'=>1))->order('rank DESC')->select();
+$IIIIII1lIII1 = M('Vote_item')->where(array('vid'=>$IIIIIIIII1I1,'status'=>1))->order('"rank" DESC')->select();
 
 $IIIIIllI1IlI = array('vid'=>$IIIIIIIII1I1);
 

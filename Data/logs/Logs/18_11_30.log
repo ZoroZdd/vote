@@ -1190,4 +1190,289 @@ INFO: [ view_filter ] --END-- [ RunTime:0.000924s ]
 INFO: [ view_end ] --START--
 INFO: Run ShowPageTrace Behavior [ RunTime:-0.011337s ]
 INFO: [ view_end ] --END-- [ RunTime:0.000169s ]
+=======
+[ 2018-11-30T15:39:41+08:00 ] 172.20.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004672s ]
+NOTIC: [2048] Declaration of IndexAction::show() should be compatible with Action::show($content, $charset = '', $contentType = '') /var/www/html/toupiao/31cms/Lib/Action/Home/IndexAction.class.php 第 4 行.
+NOTIC: [8] Undefined offset: 1 /var/www/html/toupiao/31cms/_Core/Lib/Core/Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array /var/www/html/toupiao/31cms/_Core/Lib/Core/Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.007806s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000717s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.048389s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003835s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.052416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025669s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.078247s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.087493s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.090414s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.092675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016735s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.095361s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002007s ]
+
+[ 2018-11-30T15:39:46+08:00 ] 172.20.0.1 /index.php?m=Users&a=checklogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001999s ]
+NOTIC: [8] Undefined offset: 1 /var/www/html/toupiao/31cms/_Core/Lib/Core/Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array /var/www/html/toupiao/31cms/_Core/Lib/Core/Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.006239s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000653s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002420s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.007717s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001201s ]
+SQL: SELECT `token` FROM `tp_token_open` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.005118s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001492s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.024115s ]
+SQL: UPDATE `tp_users` SET `lasttime`=1543563586,`lastloginmonth`=11,`lastip`='172.20.0.1' WHERE ( `id` = 1 ) [ RunTime:0.019849s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.138320s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002306s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.141517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028412s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.169413s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.175967s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.177852s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.179205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011455s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.181192s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001803s ]
+
+[ 2018-11-30T15:39:48+08:00 ] 172.20.0.1 /index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001835s ]
+NOTIC: [8] Undefined offset: 1 /var/www/html/toupiao/31cms/_Core/Lib/Core/Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array /var/www/html/toupiao/31cms/_Core/Lib/Core/Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003163s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000650s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001603s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.006531s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.013155s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.005307s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.011604s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.005258s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.003624s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.003506s ]
+SQL: SELECT `gid`,`activitynum`,`sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000458s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.003301s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id DESC  [ RunTime:0.014540s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.004191s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.010573s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000463s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 14 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000318s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 13 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 12 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 11 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000328s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 9 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000234s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000319s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.146298s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004357s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: ok /var/www/html/toupiao/Data/logs/Cache/User/f70321ef24e437eb7147c67ab8f0460a.php 第 165 行.
+NOTIC: [8] Undefined index: id /var/www/html/toupiao/Data/logs/Cache/User/f70321ef24e437eb7147c67ab8f0460a.php 第 180 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.150934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064642s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.215694s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.220425s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.221922s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.223135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009308s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.225486s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001633s ]
+
+[ 2018-11-30T15:39:51+08:00 ] ERR: (ThinkException) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` = 1 ) ORDER BY rank DESC 
+[ 2018-11-30T15:47:50+08:00 ] 172.20.0.1 /index.php?g=User&m=Vote&a=edit&type=img&id=16
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003059s ]
+NOTIC: [8] Undefined offset: 1 /var/www/html/toupiao/31cms/_Core/Lib/Core/Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array /var/www/html/toupiao/31cms/_Core/Lib/Core/Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.006755s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001239s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.004673s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.003521s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.003805s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.006916s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.003004s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001148s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.003169s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.002419s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `id` = 16 ) AND ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.004470s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `id` = 16 ) AND ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.002954s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE ( `vid` = 16 )  [ RunTime:0.005789s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.094745s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002755s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: picurl_guanggao /var/www/html/toupiao/Data/logs/Cache/User/06910c565e1450d396eed27237367a2f.php 第 217 行.
+NOTIC: [8] Undefined index: picurl_guanggao /var/www/html/toupiao/Data/logs/Cache/User/06910c565e1450d396eed27237367a2f.php 第 344 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.097696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110049s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.208014s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.212046s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.213459s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.214533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008013s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.216302s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001311s ]
+
+[ 2018-11-30T15:47:58+08:00 ] 172.20.0.1 /index.php?g=User&m=Vote&a=edit&type=img&id=16
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001814s ]
+NOTIC: [8] Undefined offset: 1 /var/www/html/toupiao/31cms/_Core/Lib/Core/Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array /var/www/html/toupiao/31cms/_Core/Lib/Core/Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003297s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001531s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.009809s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002749s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.007354s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000599s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.001622s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.007239s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001154s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.004778s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.001693s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `id` = 16 ) AND ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.004012s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `id` = 16 ) AND ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.001069s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE ( `vid` = 16 )  [ RunTime:0.004203s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.086616s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004053s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: picurl_guanggao /var/www/html/toupiao/Data/logs/Cache/User/06910c565e1450d396eed27237367a2f.php 第 217 行.
+NOTIC: [8] Undefined index: picurl_guanggao /var/www/html/toupiao/Data/logs/Cache/User/06910c565e1450d396eed27237367a2f.php 第 344 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.090870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068514s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.159547s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.161829s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.163147s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.164206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006106s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.165901s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001256s ]
+
+[ 2018-11-30T15:48:46+08:00 ] ERR: (ThinkException) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` = 1 ) ORDER BY rank DESC 
+[ 2018-11-30T15:48:49+08:00 ] 172.20.0.1 /index.php?g=User&m=Vote&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002565s ]
+NOTIC: [8] Undefined offset: 1 /var/www/html/toupiao/31cms/_Core/Lib/Core/Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array /var/www/html/toupiao/31cms/_Core/Lib/Core/Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002859s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000845s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001998s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.001786s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002049s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.002570s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.001588s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.004776s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001239s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.001922s ]
+SQL: SELECT `gid`,`activitynum`,`sum` FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000549s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.001579s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) ORDER BY id DESC  [ RunTime:0.004862s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.001415s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.002647s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 15 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000440s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 14 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 13 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 12 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 11 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000427s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote_item` WHERE ( `vid` = 9 ) AND ( `status` > 0 ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_vote` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000439s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.079813s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002122s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: ok /var/www/html/toupiao/Data/logs/Cache/User/f70321ef24e437eb7147c67ab8f0460a.php 第 165 行.
+NOTIC: [8] Undefined index: id /var/www/html/toupiao/Data/logs/Cache/User/f70321ef24e437eb7147c67ab8f0460a.php 第 180 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.082127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053820s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.136111s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.139467s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.140709s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.141560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006746s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.143147s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001359s ]
+
+[ 2018-11-30T15:48:51+08:00 ] ERR: (ThinkException) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` = 1 ) ORDER BY rank DESC 
+[ 2018-11-30T15:50:13+08:00 ] ERR: (ThinkException) Model:oeder您所请求的方法不存在！
+[ 2018-11-30T15:50:21+08:00 ] ERR: (ThinkException) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` = 1 ) ORDER BY rank DESC LIMIT 1  
+[ 2018-11-30T16:20:24+08:00 ] ERR: (ThinkException) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 1
+ [ SQL语句 ] : SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` = 1 ) ORDER BY rank DESC 
+[ 2018-11-30T16:26:09+08:00 ] 172.20.0.1 /index.php?g=User&m=Vote&a=edit&type=img&id=16
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002663s ]
+NOTIC: [8] Undefined offset: 1 /var/www/html/toupiao/31cms/_Core/Lib/Core/Action.class.php 第 209 行.
+NOTIC: [2] Cannot use a scalar value as an array /var/www/html/toupiao/31cms/_Core/Lib/Core/Action.class.php 第 209 行.
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.001635s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://localhost' ) LIMIT 1   [ RunTime:0.000761s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.001426s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.002021s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000966s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.002373s ]
+SQL: SELECT `wxname`,`weixin`,`wxid`,`headerpic` FROM `tp_wxuser` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `tp_token_open` [ RunTime:0.001502s ]
+SQL: SELECT `queryname` FROM `tp_token_open` WHERE ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `tp_vote` [ RunTime:0.001697s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `id` = 16 ) AND ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.005865s ]
+SQL: SELECT * FROM `tp_vote` WHERE ( `id` = 16 ) AND ( `token` = 'Eioa5C5oj3S32qhH' ) LIMIT 1   [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `tp_vote_item` [ RunTime:0.001340s ]
+SQL: SELECT * FROM `tp_vote_item` WHERE ( `vid` = 16 ) AND ( `status` = 1 ) ORDER BY "rank" DESC  [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `tp_guanggao` [ RunTime:0.001066s ]
+SQL: SELECT * FROM `tp_guanggao` WHERE ( `vid` = 16 )  [ RunTime:0.004999s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.076705s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004123s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: picurl_guanggao /var/www/html/toupiao/Data/logs/Cache/User/06910c565e1450d396eed27237367a2f.php 第 217 行.
+NOTIC: [8] Undefined index: picurl_guanggao /var/www/html/toupiao/Data/logs/Cache/User/06910c565e1450d396eed27237367a2f.php 第 344 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.081020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056988s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.138160s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.141174s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.142696s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.144221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007732s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.146148s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001656s ]
 
