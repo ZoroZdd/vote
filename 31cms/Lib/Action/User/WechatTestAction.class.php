@@ -59,7 +59,9 @@ class WechatTestAction extends UserAction{
                            }]
                      }';
         $token = $this->getAccessToken();
+        
         $url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$token;
+        var_dump($url);
         //初始化
         $curl = curl_init();
         //设置抓取的url
