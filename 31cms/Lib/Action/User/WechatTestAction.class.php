@@ -25,6 +25,7 @@ class WechatTestAction extends UserAction{
         curl_close($curl);
         //显示获得的数据
         $res = json_decode($data);
+        var_dump($res);die;
         return $res['access_token'];
     }
     // 设置微信菜单
@@ -59,7 +60,7 @@ class WechatTestAction extends UserAction{
                            }]
                      }';
         $token = $this->getAccessToken();
-        
+
         $url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$token;
         var_dump($url);
         //初始化
