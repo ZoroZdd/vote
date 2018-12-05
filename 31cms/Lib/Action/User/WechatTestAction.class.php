@@ -25,9 +25,6 @@ class WechatTestAction extends UserAction{
         curl_close($curl);
         //显示获得的数据
         $res = json_decode($data,1);
-        var_dump((string)$data);
-        var_dump($data);
-        var_dump($res);die;
         return $res['access_token'];
     }
     // 设置微信菜单
