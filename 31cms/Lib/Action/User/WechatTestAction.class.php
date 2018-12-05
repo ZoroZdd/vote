@@ -24,7 +24,7 @@ class WechatTestAction extends UserAction{
         //关闭URL请求
         curl_close($curl);
         //显示获得的数据
-        $res = json_decode($data);
+        $res = json_decode($data,1);
         var_dump($data);
         var_dump($res);die;
         return $res['access_token'];
